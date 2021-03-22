@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue JSON AJAX 抓取臺中市政府旅遊人數</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div id="data">
+        <div class="content" v-for="d in datas">
+            <h1>景點：{{ d.Complex2Name }} </h1>
+            <h2>累積旅遊人次：{{ d.FValue }}</h2>
+            <p>更新資料時間：{{ d.ModifyTime }}</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

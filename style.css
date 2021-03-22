@@ -1,0 +1,38 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 微軟正黑體;
+}
+
+#data {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 10px;
+  background: #eee;
+}
+
+#data .content {
+  background: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0 5px 5px #00000022;
+          box-shadow: 0 5px 5px #00000022;
+}
+
+#data .content h1 {
+  font-size: 26px;
+  padding: 30px 0;
+}
+
+#data .content h2 {
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+#data .content p {
+  font-size: 10px;
+}
+/*# sourceMappingURL=style.css.map */
